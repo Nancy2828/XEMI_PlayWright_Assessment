@@ -30,6 +30,9 @@ jobs:
         run: xvfb-run --auto-servernum -- npx playwright test tests/combinedSuite.spec.ts --project=chromium --headed --reporter=html,dot
         env:
           CI: true
+          XEMI_BASE_URL: ${{ secrets.XEMI_BASE_URL }}
+          XEMI_USERNAME: ${{ secrets.XEMI_USERNAME }}
+          XEMI_PASSWORD: ${{ secrets.XEMI_PASSWORD }}
 
       - name: Upload Playwright HTML report
         if: always()
