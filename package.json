@@ -1,0 +1,23 @@
+{
+  "name": "xemi_playwrightframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:combined": "npx playwright test tests/combinedSuite.spec.ts --project=chromium --headed  "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.23.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "winston": "^3.19.0"
+  }
+}
